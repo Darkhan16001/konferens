@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="kk">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Жасыл биотехнология | Конференция 2026</title>
+
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+
+<body>
+
+    <!-- ТАБИҒИ ФОН -->
+
+    <div class="nature" aria-hidden="true"></div>
+    <div class="molecules" aria-hidden="true"></div>
+
+    <!-- ПРЕЗЕНТАЦИЯ -->
+
+    <main id="stage" tabindex="0">
+
+        <div id="workspace">
+
+            <div id="zoomFrame">
+
+                <section id="slide"></section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- СЛАЙДТАР МӘЗІРІ -->
+
+    <aside id="menu" hidden>
+
+        <div class="menu-title">
+            GREEN BIOTECH
+        </div>
+
+        <p class="menu-subtitle">
+            Ғылыми конференция • 2026
+        </p>
+
+        <nav id="navigation"></nav>
+
+        <button id="reset">
+            ↻ Қайта бастау
+        </button>
+
+    </aside>
+
+    <!-- ТӨМЕНГІ БАСҚАРУ ПАНЕЛІ -->
+
+    <footer>
+
+        <div class="controls">
+
+            <button id="menuButton"
+                    title="Слайдтар мәзірі">☰</button>
+
+            <button id="prev"
+                    title="Алдыңғы слайд">◀</button>
+
+            <button id="next"
+                    title="Келесі слайд">▶</button>
+
+            <button id="timer"
+                    title="Таймерді бастау">
+                07:00
+            </button>
+
+            <button id="notesButton"
+                    title="Баяндама мәтіні">▤</button>
+
+            <button id="sourcesButton"
+                    title="Ғылыми дереккөздер">ⓘ</button>
+
+            <button id="fullscreen"
+                    title="Толық экран">⛶</button>
+
+        </div>
+
+        <div class="progress-track">
+            <div id="progress"></div>
+        </div>
+
+        <strong id="pageNumber">01 / 09</strong>
+
+        <div class="zoom-tools">
+
+            <button id="zoomOut"
+                    title="Кішірейту">−</button>
+
+            <strong id="zoomValue">100%</strong>
+
+            <button id="zoomIn"
+                    title="Үлкейту">+</button>
+
+            <input type="range"
+                   id="zoomSlider"
+                   min="25"
+                   max="300"
+                   step="5"
+                   value="100"
+                   aria-label="Экран масштабы">
+
+            <button id="zoomFit"
+                    title="Қалыпты өлшем">
+                100%
+            </button>
+
+            <button id="zoomMax"
+                    title="Максималды масштаб">
+                MAX
+            </button>
+
+        </div>
+
+        <time id="clock">00:00:00</time>
+
+    </footer>
+
+    <!-- БАЯНДАМА МӘТІНІ -->
+
+    <dialog id="notesDialog">
+
+        <div class="dialog-header">
+
+            <h2>Баяндама мәтіні</h2>
+
+            <button data-close="notesDialog">×</button>
+
+        </div>
+
+        <p id="notesTime"></p>
+
+        <div id="notesText"></div>
+
+    </dialog>
+
+    <!-- ҒЫЛЫМИ ДЕРЕККӨЗДЕР -->
+
+    <dialog id="sourcesDialog">
+
+        <div class="dialog-header">
+
+            <h2>Ғылыми дереккөздер</h2>
+
+            <button data-close="sourcesDialog">×</button>
+
+        </div>
+
+        <div id="sourcesList"></div>
+
+    </dialog>
+
+</body>
+</html>
